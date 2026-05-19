@@ -1,36 +1,20 @@
 .gameplay-section {
 }
 
-.gameplay-section-wrapper {
+.gameplay-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @include media(desktop) {
     max-width: 1440px;
   }
 }
 
-.gameplay-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 64px;
-
-  @include media(desktop) {
-    padding-bottom: 80px;
-  }
-}
-
 .gameplay-container {
-  @include media(desktop) {
-  }
-}
-
-.gameplay-title-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.gameplay-title {
   @include media(desktop) {
   }
 }
@@ -40,33 +24,42 @@
   }
 }
 
-.gameplay-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+.gameplay-swiper-container {
+  max-width: 270px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    gap: 64px;
+    max-width: 1440px;
   }
 }
 
-.gameplay-list-item {
-  background: #1e2449;
+.gameplay-swiper-container.show {
+  visibility: visible;
+}
+
+.gameplay-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.gameplay-slide {
+  box-shadow: inset 0 0 14px 1px rgba(42, 44, 54, 0.5);
+  background: #39888e;
   border-radius: 16px;
-  padding: 32px 16px;
-  display: flex;
+  padding: 16px 24px;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 100%;
+  max-width: 270px;
 
   @include media(desktop) {
-    padding: 32px;
-    max-width: 460px;
+    padding: 16px;
+    max-width: 210px;
   }
 }
 
@@ -76,26 +69,27 @@
 }
 
 .gameplay-item-title {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #939fb6;
+  color: #e7f3f5;
 
   @include media(desktop) {
-    font-size: 24px;
   }
 }
 
 .gameplay-item-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   text-align: center;
-  color: #f1fdff;
+  color: #e7f3f5;
+  max-width: 160px;
 
   @include media(desktop) {
+    max-width: max-content;
   }
 }

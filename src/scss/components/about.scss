@@ -1,55 +1,60 @@
 .about-section {
-  background: #1e2449;
-
   @include media(desktop) {
   }
 }
 
 .about-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 64px;
+  padding-top: 64px;
 
   @include media(desktop) {
-    padding-bottom: 80px;
   }
 }
 
 .about-container {
-  @include media(desktop) {
-  }
-}
+  padding: 0;
 
-.about-title-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.about-title {
   @include media(desktop) {
   }
 }
 
 .about-content-wrapper {
+  padding: 0 16px;
+
+  @include media(desktop) {
+    padding: 0 120px;
+  }
+}
+
+.about-subtitle {
   @include media(desktop) {
   }
 }
 
 .about-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #f1fdff;
-  max-width: 333px;
+  color: #2a2c36;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.about-img {
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    max-width: 821px;
   }
-}
-
-.about-text-span {
-  font-weight: 700;
 }

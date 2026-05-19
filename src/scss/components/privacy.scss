@@ -1,5 +1,5 @@
 .policy-section {
-  background: #3e507a;
+  background: #e7f3f5;
   padding-top: 104px;
   padding-bottom: 40px;
 
@@ -10,43 +10,71 @@
 }
 
 .policy-main-title {
-  font-family: 'Titan One', sans-serif;
+  @include media(desktop) {
+  }
+}
+
+.policy-section h1 {
+  font-family: 'Cantora One', sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
-  color: #f1fdff;
+  color: #575966;
   margin-bottom: 40px;
 
   @include media(desktop) {
-    font-size: 64px;
+    font-size: 48px;
     margin-bottom: 48px;
   }
 }
 
-.policy-title {
-  font-family: 'Manrope', sans-serif;
+.policy-section h2 {
+  font-family: 'Manjari', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.4;
-  color: #f1fdff;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #575966;
   margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
-.policy-text {
-  font-family: 'Manrope', sans-serif;
+.policy-section h3 {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #575966;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section p {
+  font-family: 'Manjari', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4;
-  color: #f1fdff;
+  line-height: 1.5;
+  color: #2a2c36;
+  margin-bottom: 16px;
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  @include media(desktop) {
   }
+}
+
+.policy-section li {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2a2c36;
+  margin-bottom: 16px;
 
   @include media(desktop) {
   }
@@ -58,11 +86,11 @@
 }
 
 .policy-item {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4;
-  color: #f1fdff;
+  line-height: 1.5;
+  color: #2a2c36;
   margin-bottom: 8px;
 
   &:last-child {
@@ -73,11 +101,18 @@
   }
 }
 
-.policy-span {
+.policy-section a {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
+
+  @include media(desktop) {
+  }
 }
 
-.policy-link {
+.policy-section span {
   text-decoration: underline;
-  word-wrap: break-word;
+  text-decoration-skip-ink: none;
+
+  @include media(desktop) {
+  }
 }
